@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ITURRI - People who care for people. Líderes en soluciones de seguridad y protección desde 1947.">
     <title>ITURRI | Your safety matters</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -16,10 +17,9 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <span class="logo-text">ITURRI</span>
-                    <span class="logo-tagline">Your safety matters</span>
+                    <img src="images/logo.png" alt="ITURRI Logo" class="logo-img">
                 </div>
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -28,8 +28,8 @@
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
                     <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
                     <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
-                    <li><a href="#ventajas" class="nav-link">Por qué elegirnos</a></li>
-                    <li><a href="#contacto" class="nav-link btn-primary">Contacto</a></li>
+                    <li><a href="#sectores" class="nav-link">Sectores</a></li>
+                    <li><a href="#contacto" class="nav-link btn-cta">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -37,63 +37,51 @@
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
-        <div class="hero-background"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title fade-in">
-                    People who care<br>
-                    <span class="hero-accent">for people</span>
-                </h1>
-                <p class="hero-subtitle fade-in-delay-1">
-                    Desde 1947, construyendo un mañana más seguro con soluciones innovadoras, 
-                    eficientes y sostenibles que protegen a las personas y su entorno.
-                </p>
-                <div class="hero-cta fade-in-delay-2">
-                    <a href="#soluciones" class="btn btn-primary-large">Descubre nuestras soluciones</a>
-                    <a href="#nosotros" class="btn btn-secondary-large">Conoce más</a>
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('images/hero-vehicle.webp');">
+                <div class="hero-overlay"></div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            People who care<br>
+                            <span class="hero-accent">for people</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Construyendo un mañana más seguro. Protegemos personas y su entorno con  
+                            soluciones innovadoras, eficientes y sostenibles desde 1947.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#soluciones" class="btn btn-primary">Nuestras soluciones</a>
+                            <a href="#nosotros" class="btn btn-secondary">Conócenos</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="nosotros">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Nuestra historia</span>
-                <h2 class="section-title">Más de 75 años protegiendo personas</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-content">
-                    <p class="about-text">
-                        Desde <strong>1947</strong>, Iturri ha sido pionera en promover una cultura preventiva 
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag">Desde 1947</span>
+                    <h2 class="section-title">Más de 75 años protegiendo personas</h2>
+                    <p>
+                        En <strong>ITURRI</strong> hemos sido pioneros en promover una <strong>cultura preventiva</strong> 
                         en todos los sectores, garantizando el bienestar, la seguridad y la sostenibilidad.
                     </p>
-                    <p class="about-text">
-                        Nos enfocamos en la fabricación de vehículos especializados, ropa de trabajo, 
-                        calzado y Equipos de Protección Individual (EPI), siempre con innovación y calidad.
+                    <p>
+                        Nuestra experiencia nos convierte en líderes en la fabricación de vehículos especializados, 
+                        ropa de trabajo, calzado y Equipos de Protección Individual (EPI).
                     </p>
-                    <p class="about-text">
-                        Somos referentes en el despliegue de <strong>exoesqueletos industriales</strong> 
-                        para reducir trastornos musculoesqueléticos mediante la mejora de la ergonomía laboral.
+                    <p class="highlight-text">
+                        <strong>Innovación constante:</strong> Somos referentes en el despliegue de exoesqueletos 
+                        industriales para reducir trastornos musculoesqueléticos y mejorar la ergonomía laboral.
                     </p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" data-target="75">0</span>
-                        <span class="stat-label">Años de experiencia</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-target="1947">0</span>
-                        <span class="stat-label">Fundación</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">∞</span>
-                        <span class="stat-label">Vidas protegidas</span>
-                    </div>
+                <div class="about-image">
+                    <img src="images/industria.webp" alt="Instalaciones ITURRI">
                 </div>
             </div>
         </div>
@@ -102,132 +90,124 @@
     <!-- Solutions Section -->
     <section class="solutions" id="soluciones">
         <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag">Nuestras soluciones</span>
+            <div class="section-header">
+                <span class="section-tag">Soluciones</span>
                 <h2 class="section-title">Protegemos personas y su entorno</h2>
-                <p class="section-description">
-                    Soluciones innovadoras, eficientes y sostenibles diseñadas para 
-                    garantizar la máxima seguridad en cada sector.
+                <p class="section-subtitle">
+                    Innovación, eficiencia y sostenibilidad en cada solución
                 </p>
             </div>
             <div class="solutions-grid">
                 <div class="solution-card">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/>
-                        </svg>
+                    <div class="solution-image">
+                        <img src="images/vehiculos-emergencia.webp" alt="Vehículos de emergencia">
                     </div>
-                    <h3 class="solution-title">Vehículos de emergencia</h3>
-                    <p class="solution-description">
-                        Líderes en fabricación, carrocería y equipamiento de vehículos de 
-                        emergencia, extinción de incendios y unidades de repostaje aeroportuario.
-                    </p>
-                    <ul class="solution-features">
-                        <li>Fabricación especializada</li>
-                        <li>Equipamiento completo</li>
-                        <li>Homologaciones internacionales</li>
-                    </ul>
+                    <div class="solution-content">
+                        <h3>Vehículos de emergencia y contraincendios</h3>
+                        <p>
+                            Líderes en fabricación, carrocería y equipamiento de vehículos de emergencia, 
+                            extinción de incendios y unidades de repostaje aeroportuario.
+                        </p>
+                        <ul>
+                            <li>Diseño y fabricación integral</li>
+                            <li>Equipamiento especializado</li>
+                            <li>Homologaciones internacionales</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="solution-card">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2v20M2 12h20M17 7l-10 10M7 7l10 10"/>
-                        </svg>
+                    <div class="solution-image">
+                        <img src="images/ambulancia.webp" alt="Ambulancias">
                     </div>
-                    <h3 class="solution-title">Ambulancias</h3>
-                    <p class="solution-description">
-                        Diseñamos ambulancias con enfoque holístico: protegiendo al paciente, 
-                        facilitando el trabajo del personal sanitario y asegurando la operabilidad.
-                    </p>
-                    <ul class="solution-features">
-                        <li>Diseño integral</li>
-                        <li>Equipamiento médico avanzado</li>
-                        <li>Adaptación a necesidades específicas</li>
-                    </ul>
+                    <div class="solution-content">
+                        <h3>Ambulancias y transporte sanitario</h3>
+                        <p>
+                            Diseño holístico que protege al paciente, facilita el trabajo del personal sanitario 
+                            y asegura la operabilidad del equipamiento.
+                        </p>
+                        <ul>
+                            <li>Enfoque integral de diseño</li>
+                            <li>Equipamiento médico avanzado</li>
+                            <li>Adaptación a necesidades específicas</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="solution-card">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                            <circle cx="12" cy="7" r="4"/>
-                        </svg>
+                    <div class="solution-image">
+                        <img src="images/workwear.webp" alt="Vestuario laboral">
                     </div>
-                    <h3 class="solution-title">Ropa de trabajo</h3>
-                    <p class="solution-description">
-                        Capacidad de producción y distribución para cubrir todas tus necesidades: 
-                        protección, confort, uniformidad e imagen corporativa.
-                    </p>
-                    <ul class="solution-features">
-                        <li>Alta resistencia</li>
-                        <li>Confort garantizado</li>
-                        <li>Personalización completa</li>
-                    </ul>
+                    <div class="solution-content">
+                        <h3>Vestuario laboral</h3>
+                        <p>
+                            Capacidad de producción y distribución para cubrir todas tus necesidades: 
+                            protección, confort, uniformidad e imagen corporativa.
+                        </p>
+                        <ul>
+                            <li>Alta resistencia y durabilidad</li>
+                            <li>Confort garantizado</li>
+                            <li>Personalización completa</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="solution-card">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
+                    <div class="solution-image">
+                        <img src="images/firefighter.webp" alt="EPIs">
                     </div>
-                    <h3 class="solution-title">EPIs y Exoesqueletos</h3>
-                    <p class="solution-description">
-                        Equipos de Protección Individual de máxima calidad y exoesqueletos industriales 
-                        para prevenir lesiones musculoesqueléticas y mejorar la ergonomía.
-                    </p>
-                    <ul class="solution-features">
-                        <li>Normativa internacional</li>
-                        <li>Formación especializada</li>
-                        <li>Prevención de lesiones</li>
-                    </ul>
+                    <div class="solution-content">
+                        <h3>EPIs y exoesqueletos</h3>
+                        <p>
+                            Equipos de Protección Individual de máxima calidad y exoesqueletos industriales 
+                            para prevenir lesiones musculoesqueléticas.
+                        </p>
+                        <ul>
+                            <li>Normativa internacional</li>
+                            <li>Formación especializada</li>
+                            <li>Prevención de lesiones (MSDs)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="why-choose" id="ventajas">
+    <!-- Sectors Section -->
+    <section class="sectors" id="sectores">
         <div class="container">
-            <div class="section-header centered">
-                <span class="section-tag">Ventajas</span>
-                <h2 class="section-title">Por qué elegir Iturri</h2>
+            <div class="section-header">
+                <span class="section-tag">Sectores</span>
+                <h2 class="section-title">Dónde trabajamos</h2>
             </div>
-            <div class="advantages-grid">
-                <div class="advantage-item">
-                    <div class="advantage-number">01</div>
-                    <h3 class="advantage-title">Innovación constante</h3>
-                    <p class="advantage-description">
-                        Investigamos y desarrollamos las soluciones más avanzadas del mercado, 
-                        siempre un paso adelante en tecnología de seguridad.
-                    </p>
+            <div class="sectors-grid">
+                <div class="sector-card" style="background-image: url('images/vehiculos-emergencia.webp');">
+                    <div class="sector-overlay"></div>
+                    <div class="sector-content">
+                        <h3>Emergencias y contraincendios</h3>
+                        <p>Vehículos y equipamiento especializado</p>
+                    </div>
                 </div>
-                <div class="advantage-item">
-                    <div class="advantage-number">02</div>
-                    <h3 class="advantage-title">Experiencia probada</h3>
-                    <p class="advantage-description">
-                        Más de 75 años protegiendo vidas nos respaldan. Nuestra trayectoria 
-                        es garantía de fiabilidad y profesionalidad.
-                    </p>
+                <div class="sector-card" style="background-image: url('images/sanidad.webp');">
+                    <div class="sector-overlay"></div>
+                    <div class="sector-content">
+                        <h3>Sanidad</h3>
+                        <p>Ambulancias y equipamiento médico</p>
+                    </div>
                 </div>
-                <div class="advantage-item">
-                    <div class="advantage-number">03</div>
-                    <h3 class="advantage-title">Sostenibilidad</h3>
-                    <p class="advantage-description">
-                        Comprometidos con el medio ambiente, diseñamos soluciones eficientes 
-                        que minimizan el impacto ecológico sin comprometer la seguridad.
-                    </p>
+                <div class="sector-card" style="background-image: url('images/industria.webp');">
+                    <div class="sector-overlay"></div>
+                    <div class="sector-content">
+                        <h3>Industria</h3>
+                        <p>Vestuario y protección laboral</p>
+                    </div>
                 </div>
-                <div class="advantage-item">
-                    <div class="advantage-number">04</div>
-                    <h3 class="advantage-title">Servicio integral</h3>
-                    <p class="advantage-description">
-                        Desde el diseño hasta el mantenimiento, ofrecemos asesoramiento técnico, 
-                        personalización y formación especializada.
-                    </p>
+                <div class="sector-card" style="background-image: url('images/firefighter.webp');">
+                    <div class="sector-overlay"></div>
+                    <div class="sector-content">
+                        <h3>Defensa</h3>
+                        <p>Equipamiento táctico y protección</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,13 +216,11 @@
     <!-- Contact Section -->
     <section class="contact" id="contacto">
         <div class="container">
-            <div class="contact-grid">
+            <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h2 class="contact-title">¿Hablamos?</h2>
-                    <p class="contact-description">
-                        Estamos aquí para ayudarte a encontrar la solución perfecta para tus 
-                        necesidades de seguridad y protección.
-                    </p>
+                    <h2>¿Hablamos?</h2>
+                    <p>Estamos aquí para ayudarte a encontrar la solución perfecta para tus necesidades de seguridad y protección.</p>
+                    
                     <div class="contact-details">
                         <div class="contact-item">
                             <div class="contact-icon">
@@ -259,7 +237,8 @@
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
                                 </svg>
                             </div>
                             <div>
@@ -272,22 +251,22 @@
                 <div class="contact-form-wrapper">
                     <form class="contact-form" id="contact-form">
                         <div class="form-group">
-                            <input type="text" id="name" required placeholder=" ">
-                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" required>
+                            <label for="name">Nombre completo *</label>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" required placeholder=" ">
-                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                            <label for="email">Email *</label>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" placeholder=" ">
+                            <input type="tel" id="phone">
                             <label for="phone">Teléfono</label>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" rows="4" required placeholder=" "></textarea>
-                            <label for="message">Mensaje</label>
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">Mensaje *</label>
                         </div>
-                        <button type="submit" class="btn btn-primary-large">Enviar mensaje</button>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
                     </form>
                 </div>
             </div>
@@ -299,18 +278,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3 class="footer-logo">ITURRI</h3>
+                    <img src="images/logo.png" alt="ITURRI Logo" class="footer-logo">
                     <p class="footer-tagline">People who care for people</p>
-                    <p class="footer-description">
-                        Protegiendo personas y su entorno desde 1947
-                    </p>
+                    <p class="footer-text">Protegiendo personas y su entorno desde 1947</p>
                 </div>
                 <div class="footer-links">
                     <h4>Soluciones</h4>
                     <ul>
                         <li><a href="#soluciones">Vehículos de emergencia</a></li>
                         <li><a href="#soluciones">Ambulancias</a></li>
-                        <li><a href="#soluciones">Ropa de trabajo</a></li>
+                        <li><a href="#soluciones">Vestuario laboral</a></li>
                         <li><a href="#soluciones">EPIs</a></li>
                     </ul>
                 </div>
@@ -318,13 +295,14 @@
                     <h4>Empresa</h4>
                     <ul>
                         <li><a href="#nosotros">Sobre nosotros</a></li>
-                        <li><a href="#ventajas">Por qué elegirnos</a></li>
+                        <li><a href="#sectores">Sectores</a></li>
                         <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="https://www.iturri.com" target="_blank">Web oficial</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Iturri. Todos los derechos reservados.</p>
+                <p>&copy; 2026 Iturri. Todos los derechos reservados. | <a href="https://www.iturri.com" target="_blank">www.iturri.com</a></p>
             </div>
         </div>
     </footer>
