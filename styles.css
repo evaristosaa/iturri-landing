@@ -97,7 +97,27 @@ a {
 
 .logo {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.mai-avatar {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+}
+
+.mai-avatar:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
 }
 
 .logo-text {
